@@ -1,7 +1,7 @@
 # FocusFlow
 ## Distraction Blocker for Deep Work (MV3)
 
-FocusFlow helps you lock in: block distracting sites, start a **Focus Period** or a **Pomodoro**, and get a clean, accessible overlay that nudges you back on task — with **live updates** (no manual refresh).
+FocusFlow helps you lock in: block distracting sites, start a **Focus Period** or a **Pomodoro**, and get a clean, accessible overlay that nudges you back on task with **live updates** (no manual refresh).
 
 > ✅ Chrome • Edge • Brave (Manifest V3)  
 > 🛡️ Privacy-first: stores only hostnames & timers (no page content)
