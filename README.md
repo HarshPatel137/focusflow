@@ -6,6 +6,9 @@
 - Chips UI for blocked sites; centered/wide Settings
 - Privacy: domains + timers only
 
+
+### Demo Videos
+
 ## Install
 Download the zip file, extract it
 Load the folder as unpacked in chrome://extensions (Developer mode) 
