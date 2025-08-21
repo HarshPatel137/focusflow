@@ -1,4 +1,5 @@
-# FocusFlow — Distraction Blocker for Deep Work (MV3)
+# FocusFlow
+## Distraction Blocker for Deep Work (MV3)
 
 FocusFlow helps you lock in: block distracting sites, start a **Focus Period** or a **Pomodoro**, and get a clean, accessible overlay that nudges you back on task — with **live updates** (no manual refresh).
 
@@ -10,6 +11,7 @@ FocusFlow helps you lock in: block distracting sites, start a **Focus Period** o
 ## 🎬 Demo
 
 https://github.com/user-attachments/assets/cb9b52f2-5c60-446b-b847-52624212643d  
+
 *Watch how FocusFlow keeps you in flow by blocking time-wasters while you’re focusing.*
 
 ---
