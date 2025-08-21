@@ -40,8 +40,7 @@ https://github.com/user-attachments/assets/cb9b52f2-5c60-446b-b847-52624212643d
 - [Developer Setup](#-developer-setup)
 - [Usage](#-usage)
 - [Technical Stack](#-technical-stack)
-- [Architecture](#-architecture)
-- [Permissions & Privacy](#-permissions--privacy)
+- [Screenshots](#-screenshots)
 - [Troubleshooting](#-troubleshooting)
 - [Roadmap](#-roadmap)
 - [Contributing](#-contributing)
@@ -112,7 +111,7 @@ npm run zip
   - alarms (timer ticks), idle (optional)
 - Message bus for Background ⇆ Content ⇆ Popup ⇆ Options updates
   
-## 📷 Screenshots (optional)
+## 📷 Screenshots
 
 Main Extension
 <img width="510" height="785" alt="Screenshot 2025-08-21 170616" src="https://github.com/user-attachments/assets/0852b4b2-edc5-481b-912d-96fe0ebb774a" />
