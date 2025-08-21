@@ -7,7 +7,7 @@
 - Privacy: domains + timers only
 
 
-### Demo Videos
+### 🎥 Demo Videos
 
 ## Install
 Download the zip file, extract it
