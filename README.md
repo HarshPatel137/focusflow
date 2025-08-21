@@ -77,3 +77,83 @@ npm run build
 
 # 4) Load the built extension:
 #    Load the "dist/" folder as unpacked in chrome://extensions
+
+### Optional packaging (if the repo includes a zip script)
+
+```bash
+npm run zip
+# creates focusflow.zip from /dist
+
+```
+
+## ▶️ Usage
+
+- Open the popup:
+  - Toggle Focus Period ON to immediately block configured sites.
+  - Start Pomodoro to focus for 25 minutes (customizable in settings).
+
+- Configure blocked sites:
+  - Add hostnames as chips (e.g., youtube.com, twitter.com, reddit.com).
+  - Changes apply live to open tabs (no reload needed).
+
+- When a block occurs:
+  - You’ll see a full-page overlay with Go Back or Close Tab.
+  - If a site doesn’t match, add its hostname variant (e.g., m.youtube.com).
+
+## 🛠 Technical Stack
+
+- Manifest V3 (action popup, background service worker, content script)
+- TypeScript + React UI + Tailwind CSS (clean, responsive, accessible)
+- Build tooling: Vite + (optionally) CRXJS for multi-entry MV3 bundling
+- Chrome APIs:
+  - declarativeNetRequest (hard block via dynamic rules)
+  - storage (sync settings; local timers)
+  - tabs, scripting (inject overlay / broadcast changes)
+  - alarms (timer ticks), idle (optional)
+- Message bus for Background ⇆ Content ⇆ Popup ⇆ Options updates
+  
+## 📷 Screenshots (optional)
+
+Main Extension
+<img width="510" height="785" alt="Screenshot 2025-08-21 170616" src="https://github.com/user-attachments/assets/0852b4b2-edc5-481b-912d-96fe0ebb774a" />
+
+Block Popup
+<img width="1919" height="989" alt="Screenshot 2025-08-21 170701" src="https://github.com/user-attachments/assets/bef0f3d3-7491-47e1-82b2-4b307bb70e7f" />
+
+Settings
+<img width="1015" height="342" alt="Screenshot 2025-08-21 170612" src="https://github.com/user-attachments/assets/e3d412c9-f8f6-4c3c-9028-534ca61071e1" />
+
+## 🧰 Troubleshooting
+
+**No overlay appears**
+- Ensure the site matches a configured hostname (e.g., also add m.youtube.com).
+- Toggle Focus OFF → ON; background will re-inject the content script.
+- Reload the extension if you just updated from an older version.
+
+**Close Tab doesn’t close**
+- Chrome may restrict closing a tab not opened by the extension; we fallback to navigating away.
+
+**Settings don’t apply**
+- This build broadcasts updates instantly. If you still see stale behavior, try:
+- Reopen the tab, or
+- Reload the extension, then save settings once more.
+  
+## 🗺 Roadmap
+
+- Per-day Schedules (allow windows)
+- Grace minutes with a soft-nudge before hard block
+- Usage reports (7-day) with CSV export
+- Keyboard shortcut for quick focus toggle
+- Import/export settings JSON
+
+## 🤝 Contributing
+PRs are welcome:
+- Keep TypeScript strict & lint clean.
+- Small, focused components over monoliths.
+- npm run build should pass with zero TypeScript errors.
+
+## 🪪 License
+MIT — see LICENSE.
+
+
+
