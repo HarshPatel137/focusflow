@@ -9,6 +9,10 @@
 
 ### 🎥 Demo Videos
 
+https://github.com/user-attachments/assets/cb9b52f2-5c60-446b-b847-52624212643d
+
+Watch how FocusFlow can control the flow of your productivity by blocking certain websites when focusing.
+
 ## Install
 Download the zip file, extract it
 Load the folder as unpacked in chrome://extensions (Developer mode) 
