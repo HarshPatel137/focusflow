@@ -114,7 +114,7 @@ npm run zip
 ## 📷 Screenshots
 
 Main Extension
-<img width="510" height="785" alt="Screenshot 2025-08-21 170616" src="https://github.com/user-attachments/assets/0852b4b2-edc5-481b-912d-96fe0ebb774a" />
+<img width="1917" height="905" alt="focusflow-lite" src="https://github.com/user-attachments/assets/0ca38e52-1425-42dd-bf7b-f734daf4b52c" />
 
 Block Popup
 <img width="1919" height="989" alt="Screenshot 2025-08-21 170701" src="https://github.com/user-attachments/assets/bef0f3d3-7491-47e1-82b2-4b307bb70e7f" />
