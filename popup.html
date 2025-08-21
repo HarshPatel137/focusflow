@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FocusFlow Lite</title>
+  <link rel="stylesheet" href="base.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="h">
+      <div class="title">FocusFlow Lite</div>
+      <a href="options.html" target="_blank" class="badge">Settings</a>
+    </div>
+
+    <div class="card fade-in" id="pomodoro">
+      <div class="h"><div class="title">Pomodoro</div><div class="badge" id="pomoState">Idle</div></div>
+      <div class="row" style="justify-content:space-between">
+        <div>
+          <div>Timer</div>
+          <div class="kpi" id="pomoClock" style="font-size:28px;margin-top:2px">25:00</div>
+        </div>
+        <div class="progress" aria-hidden="true">
+          <svg width="44" height="44"><circle cx="22" cy="22" r="18" stroke="#1f2937" stroke-width="6" fill="none"/></svg>
+          <svg width="44" height="44"><circle id="pomoRing" cx="22" cy="22" r="18" stroke="#3b82f6" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <button class="btn" id="pomoStart">Start Focus (25m)</button>
+        <button class="btn secondary" id="pomoBreak">Start Break (5m)</button>
+        <button class="btn danger" id="pomoStop">Stop</button>
+      </div>
+    </div>
+
+    <div class="card fade-in" style="margin-top:12px">
+      <div class="h"><div class="title">Focus Period</div><div class="badge" id="fpState">Off</div></div>
+      <div class="row">
+        <label class="chip"><input type="radio" name="mode" value="off" /><span>Off</span></label>
+        <label class="chip"><input type="radio" name="mode" value="always" /><span>Always On</span></label>
+        <label class="chip"><input type="radio" name="mode" value="schedule" /><span>Focus Period</span></label>
+      </div>
+      <div class="grid two" style="margin-top:8px">
+        <div><div style="font-size:12px;color:var(--muted)">From</div><input type="time" id="from" value="09:00" /></div>
+        <div><div style="font-size:12px;color:var(--muted)">To</div><input type="time" id="to" value="17:00" /></div>
+      </div>
+      <div class="row" style="margin-top:10px"><button class="btn" id="saveSchedule">Save</button></div>
+    </div>
+
+    <div class="card fade-in" style="margin-top:12px">
+      <div class="h"><div class="title">Blocked Sites</div></div>
+      <div class="chips" id="list"></div>
+      <div class="row" style="margin-top:10px">
+        <input type="text" id="customDomain" placeholder="Add domain e.g. reddit.com" style="flex:1" />
+        <button class="btn secondary" id="addDomain">Add</button>
+      </div>
+    </div>
+
+    <div class="footer">Privacy-friendly: only domains + timers stored locally/sync. No page content.</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
